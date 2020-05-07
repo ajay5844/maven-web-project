@@ -1,0 +1,20 @@
+pipeline{
+    agent any
+    stages{
+        stage("welcome"){
+            steps{
+                echo "welcome to Jnekins pipeline"
+            }
+        }
+        stage("welcome2"){
+            steps{
+                echo "welcome t2 Jnekins pipeline"
+            }
+        }
+        stage("git chekout"){
+            steps{
+                git credentialsId: '05d0b729-0d5f-4f99-8a47-6fab9dab7289', url: 'https://github.com/ajay5844/maven-web-project.git'
+            }
+        }
+    }
+}
