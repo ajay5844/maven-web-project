@@ -82,11 +82,11 @@
 	<distributionManagement>
 	    <repository>
 	      <id>releases</id>
-	      <url></url>
+	      <url>http://localhost:8081/releses/</url>
 	    </repository>
 	    <snapshotRepository>
 	      <id>snapshot</id>
-	      <url></url>
+	      <url>http://localhost:8081/snapshot/</url>
 	    </snapshotRepository>
 	</distributionManagement>
 	
